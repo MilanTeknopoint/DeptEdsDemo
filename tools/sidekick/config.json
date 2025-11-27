@@ -6,7 +6,7 @@
     {
       "id": "themeplugin",
       "title": "Theme Plugin",
-      "event": "themeplugin",
+      "url": "/tools/sidekick/themeplugin.js",
       "environments": [
         "preview",
         "dev"
