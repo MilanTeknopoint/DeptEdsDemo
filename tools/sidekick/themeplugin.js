@@ -4,12 +4,23 @@ export default function decorate(config, context) {
       {
         id: 'theme-selector',
         type: 'menu',
-        text: 'Theme Plugin',
+        text: 'Theme',
         items: [
           { text: 'Light Theme', value: 'light' },
-          { text: 'Dark Theme', value: 'dark' }
+          { text: 'Dark Theme', value: 'dark' },
+          { text: 'Black Theme', value: 'black' }
         ],
-        callback: (value) => console.log('Selected theme:', value)
+        callback: (value) => {
+          console.log('Theme selected:', value);
+
+          document.body.style.background =
+            value === 'light' ? 'white' :
+            value === 'dark'  ? '#222'  :
+                                'black';
+
+          document.body.style.color =
+            value === 'light' ? 'black' : 'white';
+        }
       }
     ]
   };
