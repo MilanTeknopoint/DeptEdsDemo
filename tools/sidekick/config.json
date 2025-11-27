@@ -7,7 +7,7 @@
       "id": "themeplugin",
       "title": "Stage",
       "isBadge": true,
-      "environments"[
+      "environments":[
         "preview"
       ]
     }
