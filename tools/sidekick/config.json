@@ -4,7 +4,6 @@
   "editUrlPattern": "{{contentSourceUrl}}{{pathname}}?cmd=open",
   "plugins": [
     {
-      "isBadge": true,
       "id": "themeplugin",
       "title": "Theme Plugin",
       "event": "themeplugin",
