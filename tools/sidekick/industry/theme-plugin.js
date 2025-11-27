@@ -1,5 +1,3 @@
 export default function decorate() {
-  return () => {
-    alert('Hello from my custom Sidekick plugin!');
-  }
+    console.log('Hello from my custom Sidekick plugin!');
 }
