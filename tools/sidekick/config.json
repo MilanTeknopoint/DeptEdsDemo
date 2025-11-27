@@ -8,7 +8,8 @@
       "title": "Stage",
       "isBadge": true,
       "environments":[
-        "preview"
+        "preview",
+        "dev"
       ]
     }
   ]
