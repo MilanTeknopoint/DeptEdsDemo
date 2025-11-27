@@ -6,11 +6,7 @@
     {
       "id": "themeplugin",
       "title": "Stage",
-      "isBadge": true,
-      "environments":[
-        "preview",
-        "dev"
-      ]
+      "isBadge": true
     }
   ]
 }
