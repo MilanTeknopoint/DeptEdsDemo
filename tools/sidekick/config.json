@@ -4,9 +4,14 @@
   "editUrlPattern": "{{contentSourceUrl}}{{pathname}}?cmd=open",
   "plugins": [
     {
+      "isBadge": true,
       "id": "themeplugin",
-      "title": "Stage",
-      "isBadge": true
+      "title": "Theme Plugin",
+      "event": "themeplugin",
+      "environments": [
+        "preview",
+        "dev"
+      ]
     }
   ]
 }
