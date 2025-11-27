@@ -144,7 +144,8 @@ async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
-  registerSidekickEvent('themeplugin', handleThemePlugin);
 }
 
 loadPage();
+
+registerSidekickEvent('themeplugin', handleThemePlugin);
