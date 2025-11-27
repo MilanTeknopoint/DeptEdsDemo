@@ -6,7 +6,7 @@
     {
       "id": "themeplugin",
       "title": "Theme Plugin",
-      "url": "google.com",
+      "event": "themeplugin",
       "environments": [
         "preview",
         "dev"

@@ -146,29 +146,29 @@ async function loadPage() {
 
 loadPage();
 
-// const onThemePlugin = ({ detail }) => {
-//   console.log('Theme plugin clicked', detail);
-//   alert('Theme Plugin button executed!');
-// };
+const onThemePlugin = ({ detail }) => {
+  console.log('Theme plugin clicked', detail);
+  alert('Theme Plugin button executed!');
+};
 
-// const registerThemePluginListener = () => {
-//   const sk = document.querySelector('aem-sidekick');
-//   if (!sk) return;
+const registerThemePluginListener = () => {
+  const sk = document.querySelector('aem-sidekick');
+  if (!sk) return;
 
-//   sk.addEventListener('custom:themeplugin', onThemePlugin);
-// };
+  sk.addEventListener('custom:themeplugin', onThemePlugin);
+};
 
-// const sk = document.querySelector('aem-sidekick');
-// if (sk) {
-//   // sidekick already loaded
-//   registerThemePluginListener();
-// } else {
-//   // wait until sidekick is ready
-//   document.addEventListener(
-//     'sidekick-ready',
-//     () => {
-//       registerThemePluginListener();
-//     },
-//     { once: true }
-//   );
-// }
+const sk = document.querySelector('aem-sidekick');
+if (sk) {
+  // sidekick already loaded
+  registerThemePluginListener();
+} else {
+  // wait until sidekick is ready
+  document.addEventListener(
+    'sidekick-ready',
+    () => {
+      registerThemePluginListener();
+    },
+    { once: true }
+  );
+}
