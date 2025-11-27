@@ -6,11 +6,11 @@
     {
       "id": "themeplugin",
       "title": "Theme Plugin",
-      "environments":[
+      "event": "themeplugin",
+      "environments": [
         "preview",
         "dev"
-      ],
-      "event": "themeplugin"
+      ]
     }
   ]
 }
