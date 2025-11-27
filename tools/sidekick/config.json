@@ -4,9 +4,13 @@
   "editUrlPattern": "{{contentSourceUrl}}{{pathname}}?cmd=open",
   "plugins": [
     {
-      "id": "themePlugin",
-      "title": "Theme Plugin",
-      "url": "/tools/sidekick/industry/theme-plugin.js"
+      "id": "theme-plugin",
+      "title": "theme-plugin",
+      "environments":[
+        "preview",
+        "dev"
+      ],
+      "event": "theme-plugin"
     }
   ]
 }
