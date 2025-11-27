@@ -1,5 +1,5 @@
-export default function decorate() {
-  window.hlx.sidekick.add({
+export default function decorate(sidekick) {
+  sidekick.add({
     id: 'themePlugin',
     button: 'Theme Plugin',
     callback: () => {
