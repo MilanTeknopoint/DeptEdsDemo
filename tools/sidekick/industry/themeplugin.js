@@ -1,3 +1,3 @@
-export default function decorate() {
+export default function themeplugin() {
     console.log('Hello from my custom Sidekick plugin!');
 }

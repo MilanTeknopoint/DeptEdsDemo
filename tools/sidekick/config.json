@@ -4,13 +4,13 @@
   "editUrlPattern": "{{contentSourceUrl}}{{pathname}}?cmd=open",
   "plugins": [
     {
-      "id": "theme-plugin",
-      "title": "theme-plugin1",
+      "id": "themeplugin",
+      "title": "Theme Plugin",
       "environments":[
         "preview",
         "dev"
       ],
-      "event": "theme-plugin"
+      "event": "themeplugin"
     }
   ]
 }
