@@ -1,4 +1,3 @@
-import themeplugin from '../tools/sidekick/industry/themeplugin.js';
 import {
   loadHeader,
   loadFooter,
@@ -142,7 +141,6 @@ function loadDelayed() {
 async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
-  document.querySelector('.themeplugin').addEventListener(('click'), themeplugin);
   loadDelayed();
 }
 
