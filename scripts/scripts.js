@@ -11,6 +11,8 @@ import {
   loadSections,
   loadCSS,
 } from './aem.js';
+import { registerSidekickEvent } from './sidekick-utility.js';
+import { handleThemePlugin } from './theme-plugin-handler.js';
 
 /**
  * Moves all the attributes from a given elmenet to another given element.
@@ -142,38 +144,7 @@ async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
+  registerSidekickEvent('themeplugin', handleThemePlugin);
 }
 
 loadPage();
-
-
-// scripts/scripts.js
-
-const onThemePlugin = ({ detail }) => {
-  console.log('Theme plugin clicked', detail);
-  alert('Theme Plugin button executed!');
-};
-
-const registerThemePluginListener = () => {
-  const sk = document.querySelector('aem-sidekick');
-  if (!sk) return;
-
-  sk.addEventListener('custom:themeplugin', onThemePlugin);
-};
-
-const sk = document.querySelector('aem-sidekick');
-if (sk) {
-  // sidekick already loaded
-  registerThemePluginListener();
-} else {
-  // wait until sidekick is ready
-  document.addEventListener(
-    'sidekick-ready',
-    () => {
-      registerThemePluginListener();
-    },
-    { once: true }
-  );
-}
-
-
