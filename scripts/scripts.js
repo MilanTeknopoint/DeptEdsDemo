@@ -1,3 +1,4 @@
+import themeplugin from '../tools/sidekick/industry/themeplugin.js';
 import {
   loadHeader,
   loadFooter,
@@ -145,3 +146,5 @@ async function loadPage() {
 }
 
 loadPage();
+
+document.querySelector('.themeplugin').addEventListener(('click'), themeplugin);
