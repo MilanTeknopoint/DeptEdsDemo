@@ -186,11 +186,7 @@
         "component": "reference",
         "name": "image",
         "label": "Image (with Firefly Support)",
-        "description": "Select or generate an image using Firefly AI. This field is powered by the firefly-asset-picker custom component.",
-        "ui:extension": {
-          "id": "firefly-asset-picker",
-          "url": "https://3635370-demofireflyproject-stage.adobeio-static.net/index.html"
-        }
+        "description": "Select or generate an image using Firefly AI. This field is powered by the firefly-asset-picker custom component."
       },
       {
         "component": "text",
