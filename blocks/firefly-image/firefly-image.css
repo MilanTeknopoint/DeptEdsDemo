@@ -1,0 +1,53 @@
+/* Firefly Image Block Styles */
+
+.firefly-image-container {
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.firefly-image-container picture {
+  display: block;
+  width: 100%;
+}
+
+.firefly-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+  transition: box-shadow 0.3s ease;
+}
+
+.firefly-image-container img:hover {
+  box-shadow: 0 4px 16px rgb(0 0 0 / 15%);
+}
+
+.firefly-image-caption {
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: 0.5rem;
+  font-style: italic;
+  padding: 0 0.5rem;
+}
+
+.firefly-image-placeholder {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  border: 2px dashed #ccc;
+  border-radius: 0.25rem;
+  color: #999;
+  font-size: 0.875rem;
+}
+
+/* Responsive adjustments */
+@media (width <= 768px) {
+  .firefly-image-container {
+    margin: 0.75rem 0;
+  }
+
+  .firefly-image-caption {
+    font-size: 0.8125rem;
+  }
+}
