@@ -169,6 +169,6 @@ if (sk) {
     () => {
       registerThemePluginListener();
     },
-    { once: true }
+    { once: true },
   );
 }
