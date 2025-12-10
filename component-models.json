@@ -183,22 +183,26 @@
     "id": "firefly-image",
     "fields": [
       {
-        "type": "string",
+        "type": "firefly-asset-picker",
         "name": "image",
-        "label": "Image",
-        "description": "Select an image with Firefly support",
-        "required": true,
+        "label": "Image (with Firefly Support)",
+        "description": "Select or generate an image using Firefly AI. Click to open the custom asset selector.",
+        "required": false,
         "value": ""
       },
       {
-        "component": "text",
+        "type": "text",
         "name": "imageAlt",
-        "label": "Alt Text (Accessibility)"
+        "label": "Alt Text (Accessibility)",
+        "description": "Provide alternative text for the image",
+        "value": ""
       },
       {
-        "component": "text",
+        "type": "text",
         "name": "caption",
-        "label": "Caption"
+        "label": "Caption",
+        "description": "Optional caption to display below the image",
+        "value": ""
       }
     ]
   },
