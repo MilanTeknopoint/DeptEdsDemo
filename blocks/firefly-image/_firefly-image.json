@@ -21,26 +21,25 @@
       "id": "firefly-image",
       "fields": [
         {
-          "type": "firefly-asset-picker",
+          "component": "reference",
+          "valueType": "string",
           "name": "image",
           "label": "Image (with Firefly Support)",
-          "description": "Select or generate an image using Firefly AI. Click to open the custom asset selector.",
-          "required": false,
-          "value": ""
+          "description": "Select or generate an image using Firefly AI",
+          "multi": false,
+          "dataType": "firefly-asset-picker"
         },
         {
-          "type": "text",
+          "component": "text",
           "name": "imageAlt",
           "label": "Alt Text (Accessibility)",
-          "description": "Provide alternative text for the image",
-          "value": ""
+          "description": "Provide alternative text for the image"
         },
         {
-          "type": "text",
+          "component": "text",
           "name": "caption",
           "label": "Caption",
-          "description": "Optional caption to display below the image",
-          "value": ""
+          "description": "Optional caption to display below the image"
         }
       ]
     }
