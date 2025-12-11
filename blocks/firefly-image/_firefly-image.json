@@ -21,13 +21,12 @@
       "id": "firefly-image",
       "fields": [
         {
-          "component": "reference",
+          "component": "firefly-asset-picker",
           "valueType": "string",
           "name": "image",
           "label": "Image (with Firefly Support)",
           "description": "Select or generate an image using Firefly AI",
-          "multi": false,
-          "dataType": "firefly-asset-picker"
+          "multi": false
         },
         {
           "component": "text",
