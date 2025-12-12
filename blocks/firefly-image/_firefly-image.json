@@ -21,7 +21,7 @@
       "id": "firefly-image",
       "fields": [
         {
-          "component": "firefly-asset-picker",
+          "component": "reference",
           "valueType": "string",
           "name": "image",
           "label": "Image (with Firefly Support)",
