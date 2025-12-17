@@ -172,3 +172,5 @@ if (sk) {
     { once: true },
   );
 }
+
+const demo = document.querySelector('.highlight').style.backgroundColor = 'red';
