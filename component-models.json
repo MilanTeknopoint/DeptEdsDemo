@@ -239,5 +239,17 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "hero-teaser",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Main Image",
+        "picker": "custom-asset-picker"
+      }
+    ]
   }
 ]
