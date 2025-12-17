@@ -222,13 +222,7 @@
         "valueType": "string",
         "name": "image",
         "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Main Image",
+        "multi": false,
         "picker": "custom-asset-picker"
       },
       {
